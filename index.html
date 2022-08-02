@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="biodata">
+                <label class="bio" for="fname" >First Name</label>
+                <input class="name" type="text" name="fname" placeholder="First Name" required>
+                <label class="bio" for="mname" >Middle Name</label>
+                <input class="name" type="text" name="mname" placeholder="Middle Name" required> 
+                <label class="bio" for="lname" >Last Name</label>
+                <input class="name" type="text" name="lname" placeholder="Last Name" required>
+                <label class="bio" for="age" >Age</label>
+                <input class="name" type="number" name="age" placeholder="Age" required min="18">
+                <label class="bio" for="gender" >Gender
+                    <select class="name">
+                        <option disabled selected> Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </label>
+                <!-- <input class="name" type="text" name="gender" placeholder="Gender" required> -->
+            </div>
+            <div class="party">
+                <h3>Select your preferred candidate to vote</h3>
+                <div class="candidates">
+                    <div class="apc tinubu1">
+                        <img src="/image/tinubu.jpg">
+                        <input id="apc" type="radio" name="apc">
+                        <label class="cand" for="apc" >APC</label>
+                        <p class="text">Ahmed Bola Tinubu</p>
+                    </div>
+                    <div class="apc obi1">
+                        <img src="/image/obi.jpg">
+                        <input id="lp" type="radio" name="apc">
+                        <label class="cand" for="lp" >LP</label>
+                        <p class="text">Peter Obi</p>
+                    </div>
+                    <div class="apc atiku1">
+                        <img src="/image/atiku.jpg">
+                        <input id="pdp" type="radio" name="apc">
+                        <label class="cand" for="pdp" >PDP</label>
+                        <p class="text">Atiku Abubakar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reason"></div>
+        </form>
+    </div>
+</body>
+</html>

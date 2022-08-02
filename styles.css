@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:teal;
+    color: white;
+    font-family: 'monospace, Courier New, Courier';
+    font-size: 1.05em;
+}
+.container{
+    width: 65%;
+    margin: 0 auto;
+    background-color: seagreen;
+    min-height: 100vh;
+}
+form{
+    width:95%;
+    margin: 0 auto;
+}
+.biodata{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+     
+}
+
+.name{
+    padding: 0.7em;
+    width: 100%;
+}
+select{
+    /* display: block; */
+}
+.candidates{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    border: red solid 2px;
+    
+}
+
+input[type='radio']{
+background-color: blue;
+}
+
+@media screen and (max-width: 780px) {
+    .candidates{
+        display: block;
+        
+    }
+    img{
+        display: block;
+       margin-top: 3.5em;
+    }
+    p{
+        display: block;
+    }
+
+    .apc{
+        border: solid blue 2px;
+        margin: 15px;
+    }
+}
+    
+
+img{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* display: block; */
+    float: left;
+}
+.apc{
+    display: flex;
+    align-items: center;
+    margin:0 2em;
+}
+
+.obi1, .tinubu1, .atiku1{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 4.5em;
+    text-align: center;
+   
+}
+
+.tinubu1 .text, .atiku1 .text{
+     margin-left: -1em;
+}
